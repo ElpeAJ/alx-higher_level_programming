@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-iterator = range(0, 99, 1)
+numbers = range(0, 100, 1)
 
-for index in iterator:
-    print("{:02d}, ".format(index), end="")
+for i in numbers:
+    if i < 99:
+        print("{:02d}, ".format(i), end="")
+        continue
+    print(i)
