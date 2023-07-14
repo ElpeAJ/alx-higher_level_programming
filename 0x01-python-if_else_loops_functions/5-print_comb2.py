@@ -3,4 +3,4 @@
 iterator = range(0, 99, 1)
 
 for index in iterator:
-    print("{}, ".format(index), end="")
+    print("{:02d}, ".format(index), end="")
