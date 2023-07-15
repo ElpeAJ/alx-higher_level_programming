@@ -7,6 +7,6 @@ def element_at(my_list, idx):
     for i in range(count):
         if idx < 0:
             return (None)
-        if idx > range(count):
+        if idx >= range(count):
             return (None)
-        return (my_list[idx])
+    return (my_list[idx])
