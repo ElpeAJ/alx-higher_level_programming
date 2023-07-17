@@ -9,4 +9,3 @@ for i in range(9):
         print("{}{}".format(i, j))
     step += 1
     j = range(step, 10)
-
