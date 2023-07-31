@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def safe_print_division(a, b):
+    quotient = 0
     try:
         quotient = a / b
     except ZeroDivisionError:
@@ -8,3 +9,4 @@ def safe_print_division(a, b):
     finally:
         print("Inside result: None")
         print("{}".format(quotient))
+    return (quotient)
