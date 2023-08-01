@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-
-"""Define a class named Square"""
+"""
+Define a class named Square
+"""
 
 
 class Square:
-    """Define a class named Square"""
+    """
+    Define a class named Square
+    """
     def __init__(self, size=0):
         if(type(size) is int):
             if (size < 0):
