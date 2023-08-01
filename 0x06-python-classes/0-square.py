@@ -4,6 +4,7 @@
 Empty class Square
 """
 
+
 class Square:
     """Define a Square"""
     pass
