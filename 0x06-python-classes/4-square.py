@@ -13,6 +13,9 @@ class Square:
     def __init__(self, size=0):
         """
         Initialize square
+
+        Parameters
+        size : int, optional
         """
         self.size = size
 
@@ -37,7 +40,7 @@ class Square:
         Set size of the square
         """
 
-        if(type(value) is int):
+        if (type(value) is int):
             if value < 0):
                 raise ValueError("size must be >= 0")
             self.__size = value
