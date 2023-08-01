@@ -15,7 +15,7 @@ class Square:
         Initialize square
         """
 
-        if(type(size) is int):
+        if (type(size) is int):
             if (size < 0):
                 raise ValueError("size must be >= 0")
             self.__size = size
@@ -26,4 +26,5 @@ class Square:
         """
         Returns the area for a square
         """
-        return (self.__size**2)
+
+        return (self.__size ** 2)
