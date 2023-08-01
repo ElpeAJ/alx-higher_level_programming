@@ -2,6 +2,10 @@
 
 """Defines a class named Square"""
 class Square:
+    """Defines a class named Square"""
     def __init__(self, size):
-        """Initialize an instance of a square with size givien"""
+        """
+        Initialize an instance of a
+        square with size givien
+        """
         self.__size = size
