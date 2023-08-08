@@ -6,6 +6,9 @@
 class Rectangle:
     """Defines a rectangular shape"""
 
+
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Instantiation with option width and height
         Arguments:
@@ -13,6 +16,7 @@ class Rectangle:
             height: integer and by defaul, 0
         """
 
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
