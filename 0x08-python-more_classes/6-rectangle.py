@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Rectangle class definition"""
 
 
@@ -7,7 +6,6 @@ class Rectangle:
     """Defines a rectangular shape"""
 
     number_of_instances = 0
-
 
     def __init__(self, width=0, height=0):
         """Instantiation with option width and height
@@ -24,7 +22,6 @@ class Rectangle:
         """Print message when an instance of rectangle is deleted"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
 
     @property
     def width(self):
