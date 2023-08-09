@@ -16,9 +16,15 @@ class Rectangle:
             height: integer and by defaul, 0
         """
 
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
+
+    def __del__(self):
+        """Print message when an instance of rectangle is deleted"""
+        type(self).number_of_instances -= 1
+        print("Bye rectangle...")
+
 
     @property
     def width(self):
@@ -84,8 +90,3 @@ class Rectangle:
         """Returns string representation of rectangle"""
 
         return (f"Rectangle({self.__width}, {self.__height})")
-
-    def __del__(self):
-        """Print message when an instance of rectangle is deleted"""
-        type(self).number_of_instances -= 1
-        print("Bye rectangle...")
