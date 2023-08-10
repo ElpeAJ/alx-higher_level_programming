@@ -91,3 +91,22 @@ class Rectangle:
 
         return (f"Rectangle({self.__width}, {self.__height})")
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """
+        Returns the biggest rectangle based on the area after
+        comparing two instances of a rectangle
+
+        Raises also: TypeError
+        When either of the instances are not of type Rectangle.
+        """
+
+        if (type(rect_2) is Rectangle):
+            if (type(rect_1) is Rectangle):
+                if (rect_1.area() < rect_2.area()):
+                    return rect_2
+                return rect_1
+            else:
+                raise TypeError("rect_1 must be an instance of Rectangle")
+        else:
+            raise TypeError("rect_2 must be an instance of Rectangle")
