@@ -6,7 +6,6 @@
 class Rectangle:
     """Defines a rectangular shape"""
 
-
     number_of_instances = 0
     print_symbol = "#"
 
