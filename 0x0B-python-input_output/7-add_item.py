@@ -6,12 +6,12 @@ from save_to_json_file import save_to_json_file
 from load_from_json_file import load_from_json_file
 
 
-def add_items(arg):
+def add_items(args):
     try:
         py_list = load_from_json_file("add_item.json")
     except:
         py_list = []
-    py_list += arg
+    py_list += args
     save_to_json_file(py_list, "add_item.json")
 
     if __name__ == "__main__":
