@@ -6,5 +6,5 @@ and prints it to stdout"""
 def read_file(filename=""):
     """Reads from file and prints to stdout"""
 
-    with open(filename, "r", encoding="UFT-8") as f:
+    with (open(filename, "r", encoding="UTF-8")) as f:
         print(f.read(), end="")
