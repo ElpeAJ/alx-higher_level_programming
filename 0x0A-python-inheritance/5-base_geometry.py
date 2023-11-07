@@ -5,4 +5,7 @@ An empty class
 
 
 class BaseGeometry:
+    """
+    class defined
+    """
     pass
