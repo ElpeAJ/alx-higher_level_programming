@@ -1,6 +1,6 @@
 Test the method ``print_sorted`` in the module ``1-my_list``
 
-#import the class
+#Load the class
 >>>MyList = __import__('1-my_list').MyList
 
 #Test with random integers
@@ -22,6 +22,7 @@ Test the method ``print_sorted`` in the module ``1-my_list``
 # Test negatives appended to empty list
 >>> my_list = MyList()
 >>> my_list.append(-3)
+
 >>> my_list.append(-5)
 >>> print(my_list)
 [-3, -5]
