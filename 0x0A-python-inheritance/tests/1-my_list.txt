@@ -1,4 +1,4 @@
-Test
+Test the method ``print_sorted`` in the module ``1-my_list``
 
 #import the class
 >>>MyList = __import__('1-my_list').MyList
