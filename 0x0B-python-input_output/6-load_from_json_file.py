@@ -8,4 +8,3 @@ def load_from_json_file(filename):
     returns: decoded JSON object that was loaded"""
     with open(filename, "r") as f:
         return json.load(f)
-
