@@ -145,8 +145,39 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}"
                 .format(self.id, self.x, self.y, self.width, self.height))
 
-        def to_dictionary(self):
-            """
+    def update(self, *args, **kwargs):
+        """
+        Updates rectangle attributes
+
+        Parameters
+        args : tuple
+        kwargs : dictionary
+        """
+        if (len(args) > 0 and type(args[0]) is int):
+            if (len(args) == 1):
+                self.id, = args
+            elif (len(args) == 2):
+                self.id, self.width = args
+            elif (len(args) == 3):
+                self.id, self.width, self.height = args
+            elif (len(args) == 4):
+                self.id, self.width, self.height, self.x = args
+            else:
+                self.id, self.width, self.height, self.x, self.y = args
+        else:
+            self.id = kwargs.get("id") if kwargs.get("id") is \
+                not None else self.id
+            self.width = kwargs.get("width") if kwargs.get("width") is \
+                not None else self.width
+            self.height = kwargs.get("height") if kwargs.get("height") is \
+                not None else self.height
+            self.x = kwargs.get("x") if kwargs.get("x") is \
+                not None else self.x
+            self.y = kwargs.get("y") if kwargs.get("y") is \
+                not None else self.y
+
+    def to_dictionary(self):
+        """
         Returns dictionary representation for instance
         of a rectangle.
         """
