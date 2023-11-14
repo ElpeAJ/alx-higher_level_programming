@@ -12,8 +12,8 @@ class Rectangle(Base):
         Parameters
         width : integer
         height : integer
-        x : integer, optional default value is 0
-        y : integer, optional default value is 0
+        x : integer, optional default value is zero
+        y : integer, optional default value is zero
         """
         super().__init__(id)
         self.width = width
