@@ -122,3 +122,15 @@ class Rectangle(Base):
         """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
             self.x, self.y, self.width, self.height))
+
+        def to_dictionary(self):
+            """
+        Returns dictionary representation for instance
+        of a rectangle.
+        """
+        return {
+                "x": self.x,
+                "y": self.y,
+                "id": self.id,
+                "width": self.width, "height": self.height
+                }
