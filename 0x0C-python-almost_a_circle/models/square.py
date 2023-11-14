@@ -60,12 +60,12 @@ class Square(Rectangle):
         else:
             self.id = kwargs.get("id") if kwargs.get("id") \
                     is not None else self.id
-            self.size = kwargs.get("size") if kwargs.get("size") is \
-                not None else self.size
-            self.x = kwargs.get("x") if kwargs.get("x") is not None \
-                else self.x
-            self.y = kwargs.get("y") if kwargs.get("y") is not None \
-                else self.y
+            self.size = kwargs.get("size") if kwargs.get("size") \
+                    is not None else self.size
+            self.x = kwargs.get("x") if kwargs.get("x") \
+                    is not None else self.x
+            self.y = kwargs.get("y") if kwargs.get("y") \
+                    is not None else self.y
 
     def to_dictionary(self):
         """
@@ -75,4 +75,4 @@ class Square(Rectangle):
                 "y": self.y,
                 "id": self.id,
                 "size": self.width
-        }
+                }
