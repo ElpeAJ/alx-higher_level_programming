@@ -116,6 +116,28 @@ class Rectangle(Base):
         """ Returns area of the rectangle """
         return (self.width * self.height)
 
+    def display(self):
+        """
+        Print rectangle
+        Returns The number of points printed for the shape.
+        """
+        character = 0
+
+        for increase in range(0, self.y):
+            character += 1
+            print()
+
+        for row in range(0, self.height):
+            for increase in range(0, self.x):
+                character += 1
+                print(" ", end="")
+            for column in range(0, self.width, 1):
+                character += 1
+                print("#", end="")
+            print()
+
+        return (character)
+
     def __str__(self):
         """
         Returns string representation of the rectangle.
