@@ -17,7 +17,7 @@ if (__name__ == "__main__"):
                                  passwd=password,
                                  db=databaseName)
     cursor = connection.cursor()
-    cursor.execute("SELECT id, name FROM states;
+    cursor.execute("SELECT id, name FROM states\
             ORDER BY id ASC;")
 
     for row in cursor.fetchall():
