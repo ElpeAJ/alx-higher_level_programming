@@ -6,7 +6,7 @@ if (isNaN(numArgc)) {
   for (let rargc = 0; rargc < numArgc; rargc++) {
     for (let argc = 0; argc < numArgc; argc++) {
       console.log('X');
-  }
-  console.log('');
+    }
+    console.log('');
   }
 }
